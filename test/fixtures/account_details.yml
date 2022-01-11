@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_number: MyString
+  balance_sepcified: MyString
+  current_balance: 
+  disbursed_amount: 9.99
+  institution: MyString
+  last_payment: 9.99
+  last_payment_date: MyString
+  loan_purpose: MyString
+  past_due_amount: 9.99
+  write_off_amount: 9.99
+
+two:
+  account_number: MyString
+  balance_sepcified: MyString
+  current_balance: 
+  disbursed_amount: 9.99
+  institution: MyString
+  last_payment: 9.99
+  last_payment_date: MyString
+  loan_purpose: MyString
+  past_due_amount: 9.99
+  write_off_amount: 9.99

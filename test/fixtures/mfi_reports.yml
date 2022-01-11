@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ref_number: 1
+  inquiry_purpose: MyString
+  transaction_amount: 9.99
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  additional_name_type: MyString
+  additional_name: MyString
+  address: MyString
+  pin_code: 1
+  date_of_birth: 2021-12-30 14:04:54
+  gender: MyString
+  ration_card: 1
+  voter_id: 1
+  national_id: 1
+  phone_home: 1
+  phone_mob: 1
+
+two:
+  ref_number: 1
+  inquiry_purpose: MyString
+  transaction_amount: 9.99
+  first_name: MyString
+  last_name: MyString
+  middle_name: MyString
+  additional_name_type: MyString
+  additional_name: MyString
+  address: MyString
+  pin_code: 1
+  date_of_birth: 2021-12-30 14:04:54
+  gender: MyString
+  ration_card: 1
+  voter_id: 1
+  national_id: 1
+  phone_home: 1
+  phone_mob: 1

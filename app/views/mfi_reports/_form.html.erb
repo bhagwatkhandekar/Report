@@ -1,0 +1,84 @@
+<%= form_for(@mfi_report) do |f| %>
+  <% if @mfi_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mfi_report.errors.count, "error") %> prohibited this mfi_report from being saved:</h2>
+
+      <ul>
+      <% @mfi_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :ref_number %><br>
+    <%= f.number_field :ref_number %>
+  </div>
+  <div class="field">
+    <%= f.label :inquiry_purpose %><br>
+    <%= f.text_field :inquiry_purpose %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_amount %><br>
+    <%= f.text_field :transaction_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :middle_name %><br>
+    <%= f.text_field :middle_name %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_name_type %><br>
+    <%= f.text_field :additional_name_type %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_name %><br>
+    <%= f.text_field :additional_name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :pin_code %><br>
+    <%= f.number_field :pin_code %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br>
+    <%= f.datetime_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :ration_card %><br>
+    <%= f.number_field :ration_card %>
+  </div>
+  <div class="field">
+    <%= f.label :voter_id %><br>
+    <%= f.number_field :voter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :national_id %><br>
+    <%= f.number_field :national_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_home %><br>
+    <%= f.number_field :phone_home %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_mob %><br>
+    <%= f.number_field :phone_mob %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

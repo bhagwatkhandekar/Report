@@ -1,0 +1,69 @@
+<% binding.pry %>
+<h1> Welcome to new page </h1>
+<p>
+	<p id="notice"><%= notice %></p>
+
+<h1>Listing Mfi Reports</h1>
+
+<table style="border: 5px solid #990000; border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>Ref number</th>
+      <th>Inquiry purpose</th>
+      <th>Transaction amount</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Middle name</th>
+      <th>Additional name type</th>
+      <th>Additional name</th>
+      <th>Address</th>
+      <th>Pin code</th>
+      <th>Date of birth</th>
+      <th>Gender</th>
+      <th>Ration card</th>
+      <th>Voter</th>
+      <th>National</th>
+      <th>Phone home</th>
+      <th>Phone mob</th>
+      <!-- <th>Action</th> -->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @mfi_report.ref_number %></td>
+        <td><%= @mfi_report.inquiry_purpose %></td>
+        <td><%= @mfi_report.transaction_amount %></td>
+        <td><%= @mfi_report.first_name %></td>
+        <td><%= @mfi_report.last_name %></td>
+        <td><%= @mfi_report.middle_name %></td>
+        <td><%= @mfi_report.additional_name_type %></td>
+        <td><%= @mfi_report.additional_name %></td>
+        <td><%= @mfi_report.address %></td>
+        <td><%= @mfi_report.pin_code %></td>
+        <td><%= @mfi_report.date_of_birth %></td>
+        <td><%= @mfi_report.gender %></td>
+        <td><%= @mfi_report.ration_card %></td>
+        <td><%= @mfi_report.voter_id %></td>
+        <td><%= @mfi_report.national_id %></td>
+        <td><%= @mfi_report.phone_home %></td>
+        <td><%= @mfi_report.phone_mob %></td>
+        <!-- <td><%#= link_to 'Show', mfi_report %></td>
+        <td><%#= link_to 'Edit', edit_mfi_report_path(@mfi_report) %></td>
+        <td><%#= link_to 'Destroy', mfi_report, method: :delete, data: { confirm: 'Are you sure?' } %></ -->td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test', new_mfi_report_path %>
+
+</p>
+
+<style>
+	table, th, td {
+  		border: 1px solid black;
+	}
+</style>

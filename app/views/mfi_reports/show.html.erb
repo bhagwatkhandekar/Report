@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ref number:</strong>
+  <%= @mfi_report.ref_number %>
+</p>
+
+<p>
+  <strong>Inquiry purpose:</strong>
+  <%= @mfi_report.inquiry_purpose %>
+</p>
+
+<p>
+  <strong>Transaction amount:</strong>
+  <%= @mfi_report.transaction_amount %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @mfi_report.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @mfi_report.last_name %>
+</p>
+
+<p>
+  <strong>Middle name:</strong>
+  <%= @mfi_report.middle_name %>
+</p>
+
+<p>
+  <strong>Additional name type:</strong>
+  <%= @mfi_report.additional_name_type %>
+</p>
+
+<p>
+  <strong>Additional name:</strong>
+  <%= @mfi_report.additional_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @mfi_report.address %>
+</p>
+
+<p>
+  <strong>Pin code:</strong>
+  <%= @mfi_report.pin_code %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @mfi_report.date_of_birth %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @mfi_report.gender %>
+</p>
+
+<p>
+  <strong>Ration card:</strong>
+  <%= @mfi_report.ration_card %>
+</p>
+
+<p>
+  <strong>Voter:</strong>
+  <%= @mfi_report.voter_id %>
+</p>
+
+<p>
+  <strong>National:</strong>
+  <%= @mfi_report.national_id %>
+</p>
+
+<p>
+  <strong>Phone home:</strong>
+  <%= @mfi_report.phone_home %>
+</p>
+
+<p>
+  <strong>Phone mob:</strong>
+  <%= @mfi_report.phone_mob %>
+</p>
+
+<%= link_to 'Edit', edit_mfi_report_path(@mfi_report) %> |
+<%= link_to 'Back', mfi_reports_path %>
